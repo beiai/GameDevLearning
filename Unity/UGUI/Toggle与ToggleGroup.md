@@ -45,3 +45,15 @@ GetFirstActiveToggle 函数可以获取当前激活的 Toggle，感觉就这个�
 
 再触发 false -> true 的 OnValueChanged(true)
 
+# 吐槽及优化
+
+ToggleGroup不能获取所有 Toggle
+
+解决方案是继承 ToggleGroup 后可以直接使用 Toggle List
+
+Toggle 只能对单张图的显示隐藏有很大局限性
+
+或者说 Toggle 只适用于 Toggle 这种勾选框
+
+复杂情况还是最好自己手撸魔改一个
+
