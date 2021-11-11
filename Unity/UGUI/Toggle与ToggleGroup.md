@@ -1,4 +1,4 @@
-# Toggle
+# Toggle常见使用
 
 Toggle 最少需要两张 Image，一个用来给 Selectable
 
@@ -6,7 +6,19 @@ Toggle 最少需要两张 Image，一个用来给 Selectable
 
 其中 Toggle 和 Image 可在同一个节点
 
-# Toggle 点击判定区域
+# Toggle的本质
+
+Toggle 组件实际上就是对一个支持点击的对象增加了一个 isOn 的属性
+
+每点击一次就切换 isOn 属性的状态，通过监听 isOn 属性的变化，我们可以做相应的处理
+
+- 只要 isOn 状态发生变化，就处理相应的逻辑，相当于每次点击都执行，类似 Button
+
+- 只当 isOn 为 true 或为 false 时才处理相应的逻辑
+
+通过以上机制完全可以自己实现指定图片的显示和隐藏
+
+# Toggle点击判定区域
 
 Toggle 本身不具有事件检测的能力
 
